@@ -5,14 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student JS - Testing</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
-
-    <div>
-        <ul class="datas">
-        </ul>
-    </div>
+<body class="flex  mt-8 p-3 flex-col items-center font-poppins">
+    <main class="flex flex-row justify-center gap-10">
+        <section class="flex-1.5">
+            <p class="text-2xl mb-1 font-bold">WELCOME TO STUDENT PORTAL</p>
+            <p class="text-lg medium">1 - Show all students</p>
+            <p class="text-lg medium">2 - Search By ID</p>
+            <p class="text-lg medium">3 - Course Statistics</p>
+            <p class="text-lg medium">4 - Exit</p>
+        </section>
+        <section class="flex-2">
+            <input class="input px-1 py-1 rounded-sm border border-gray-800" type="text"
+                placeholder="Enter your Choice">
+            <input class="id-input px-1 py-1 rounded-sm border border-gray-800" type="text"
+                placeholder="Input ID for option 2">
+            <button class="event-button px-2 py-1 border border-gray-800 rounded-sm">Submit</button>
+            <div class="mt-3">
+                <ul class="datas text-md font-medium"></ul>
+            </div>
+        </section>
+    </main>
     <script src="students.js""></script>
 </body>
 

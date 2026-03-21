@@ -7,41 +7,44 @@
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     </head>
     <body class="flex mt-8 p-3 flex-col items-center">
-        <p class="text-3xl p-5 font-bold">WELCOME TO STUDENT MANAGEMENT</p>
-        <main class="flex gap-10">
-            <section class="flex  gap-1 flex-col">
-                <div>
-                    <input type="text" placeholder="Add a student" class="px-2 py-1 border border-gray-800 rounded-sm">
-                      <input type="text" placeholder="Add a Course" class="px-2 py-1 border border-gray-800 rounded-sm">
-                    <button class="px-2 py-1 border border-gray-800 rounded-sm">Add Student</button>
+        <p class="text-3xl pb-5 mb-2 font-bold">WELCOME TO STUDENT MANAGEMENT</p>
+        <section class="flex gap-10 ">
+            <section class="flex gap-4 flex-col">
+
+                <div class="flex gap-2">
+                    <input type="text" placeholder="Add a student" class="add-student-input px-2 py-1 border border-gray-800 rounded-sm">
+                      <input type="text" placeholder="Add a Course" class="add-course-input px-2 py-1 border border-gray-800 rounded-sm">
+                    <button class="add-student-btn px-2 py-1 border border-gray-800 rounded-sm">Add Student</button>
                 </div>
-                <div>
-                    <input  class="px-2 py-1 border border-gray-800 rounded-sm" type="text" placeholder="Enter a ID to remove a student">
-                    <button class="px-2 py-1 border border-gray-800 rounded-sm" >Remove Student</button>
+
+                <div class="flex gap-2">
+                    <input class="remove-input px-2 py-1 border border-gray-800 rounded-sm" type="text" placeholder="ID to remove student">
+                    <button class="remove-student-btn px-2 py-1 border border-gray-800 rounded-sm">Remove Student</button>
                 </div>
             </section>
-            <section class="flex gap-1 flex-col">
-                <div class="mb-1">
+
+            <section class="flex gap-4 flex-col">
+                <div class="flex gap-2">
                     <input class="search-input px-1 py-1 rounded-sm border border-gray-800" type="text"
                         placeholder="Search Student By ID">
                     <button class="search-button px-2 py-1 border border-gray-800 rounded-sm">Search</button>
                 </div>
-                <div>
+
+                <div class="flex gap-2">
                     <input class="name-input px-1 py-1 rounded-sm border border-gray-800" type="text"
-                        placeholder="Search Student By Name">
+                        placeholder="Search student name">
                     <button class="find-name px-2 py-1 border border-gray-800 rounded-sm">Search</button>
                 </div>
-                <div>
+
+                <div class="flex gap-2">
                     <button class="show-all-student px-2 py-1 border border-gray-800 rounded-sm">Show All Student</button>
-                    <button class="show-course-stats px-2 py-1 border border-gray-800 rounded-sm">
-                        Show Course
-                        Statistic</button>
-                </div>
-                <div class="mt-3">
-                    <ul class="datas text-md font-medium"></ul>
+                    <button class="show-course-stats px-2 py-1 border border-gray-800 rounded-sm">Course Statistic</button>
                 </div>
             </section>
-        </main>
+        </section>
+        <section class="mt-10">
+                <ul class="datas text-md font-medium"></ul>
+        </section>
         <script src="students.js""></script>
     </body>
 </html>

@@ -1,0 +1,25 @@
+{
+    "users" : [
+        {
+        "id": 1,
+        "name": "Jandi",
+        "email": "jandi1@gmail.com",
+        "status": "College Student",
+        "address": {"city": "Las Pinas", "street": "Masaya St"}
+        },
+        {
+        "id": 2,
+        "name": "Micky",
+        "email": "micksss@gmail.com",
+        "status": "Service crew",
+        "address": {"city": "Makati City", "street": "BGC"}
+        },
+         {
+        "id": 3,
+        "name": "Gigi",
+        "email": "gigi9@gmail.com",
+        "status": "Developer",
+        "address": {"city": "Paranaque City", "street": "Silverio"}
+        }
+    ]           
+}

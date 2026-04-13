@@ -49,7 +49,7 @@ function removeStudent(){
         renderedList("Invalid ID, Student not found.")
         removeInput.value = ""
     }
-}
+}  
 
 function renderedList(text) {
     const newList = document.createElement("li")

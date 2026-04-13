@@ -23,7 +23,7 @@ async function getUserData(){
     await delay(1000)
 
     try{
-        const response = await fetch(`/users.json`)
+        const response = await fetch(`users.json`)
 
         if(!response.ok){
             throw new Error("HTTP Request failed.")

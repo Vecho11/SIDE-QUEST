@@ -54,7 +54,8 @@ function renderUser(user){
             <p>Name: ${user.name}</p>
             <p>City: ${user.address.city}</p>
             <p>Email: ${user.email}</p>
-            <p>Status: ${user.status}</p>
+            
+            <p>Status: ${user.status}</p\
         </div>
     `
 }
